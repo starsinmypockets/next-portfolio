@@ -1,65 +1,104 @@
-import Head from 'next/head'
-import styles from '../styles/Home.module.css'
+import { useState, useEffect, useRef } from "react"
+import Head from "next/head"
+import styles from "../styles/Home.module.css"
+import { faBars } from "@fortawesome/free-solid-svg-icons"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 
 export default function Home() {
+  const [menuOpen, setMenuOpen] = useState(false)
+  const [dimensions, setDimensions] = useState({})
+  const [showHamburger, setShowHamburger] = useState(false)
+
+  useEffect(() => {
+    function handleResize() {
+      setDimensions({
+        height: window.innerHeight,
+        width: window.innerWidth,
+      })
+    }
+
+    window.addEventListener("resize", handleResize)
+
+    return (_) => {
+      window.removeEventListener("resize", handleResize)
+    }
+  }, [])
+
+  console.log(
+    dimensions.width,
+    dimensions.height,
+    showHamburger,
+    dimensions.width < 764 && showHamburger == false
+  )
+
+  const hamburgerIsHidden = () =>
+    dimensions.width <= 766 && showHamburger == false
+
   return (
-    <div className={styles.container}>
+    <div>
       <Head>
         <title>Create Next App</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-
-      <main className={styles.main}>
-        <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
-        </h1>
-
-        <p className={styles.description}>
-          Get started by editing{' '}
-          <code className={styles.code}>pages/index.js</code>
-        </p>
-
-        <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <h3>Documentation &rarr;</h3>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
-
-          <a href="https://nextjs.org/learn" className={styles.card}>
-            <h3>Learn &rarr;</h3>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
-
-          <a
-            href="https://github.com/vercel/next.js/tree/master/examples"
-            className={styles.card}
+      <FontAwesomeIcon
+        className={!hamburgerIsHidden() ? 'hidden' : '' + "md:hidden fixed top-0 m-2 text-gray-200"}
+        icon={faBars}
+        onClick={() => setShowHamburger(true)}
+      />
+      <ul
+        className={
+          hamburgerIsHidden()
+            ? "hidden"
+            : "display-block" +
+              ` flex w-full md:w-auto bg-gray-600 bg-opacity-40 md:bg-transparent fixed top-1 right-0 md:mr-12`
+        }
+      >
+        <li>
+          <span
+            className="mr-4 ml-2 md:hidden text-gray-200"
+            onClick={() => setShowHamburger(false)}
           >
-            <h3>Examples &rarr;</h3>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
+            X
+          </span>
+        </li>
+        <li>
+          <a href="#work" className="flex-1 mr-4">
+            Work
           </a>
-
-          <a
-            href="https://vercel.com/import?filter=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-          >
-            <h3>Deploy &rarr;</h3>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
+        </li>
+        <li>
+          <a href="#about" className="flex-1 mr-4">
+            About
           </a>
+        </li>
+        <li>
+          <a href="#services" className="flex-1 mr-4">
+            Services
+          </a>
+        </li>
+        <li>
+          <a href="#contact" className="flex-1 mr-4">
+            Contact
+          </a>
+        </li>
+      </ul>
+      <div id="home" className="h-screen w-full bg-skyline bg-cover">
+        <div className="h-screen w-full bg-gray-800 bg-opacity-80">
+          <h2 className="text-4xl p-6">Home</h2>
         </div>
-      </main>
-
-      <footer className={styles.footer}>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel Logo" className={styles.logo} />
-        </a>
-      </footer>
+      </div>
+      <div id="work" className="h-screen w-full">
+        <h2 className="text-4xl p-6">Work</h2>
+      </div>
+      <div id="about" className="h-screen w-full">
+        <h2 className="text-4xl p-6">About</h2>
+      </div>
+      <div id="services" className="h-screen w-full">
+        <h2 className="text-4xl p-6">Services</h2>
+      </div>
+      <div id="contact" className="h-screen w-full">
+        <h2 className="text-4xl p-6">Contact</h2>
+      </div>
     </div>
   )
 }
