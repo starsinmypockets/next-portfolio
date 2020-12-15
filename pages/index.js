@@ -4,6 +4,7 @@ import styles from "../styles/Home.module.css"
 import { faBars } from "@fortawesome/free-solid-svg-icons"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import Skills from "../components/skills"
+import Services from "../components/services"
 
 export default function Home() {
   const [menuOpen, setMenuOpen] = useState(false)
@@ -117,9 +118,7 @@ export default function Home() {
           </a>
         </div>
       </div>
-      <div id="services" className="h-screen w-full">
-        <h2 className="text-4xl p-6">Services</h2>
-      </div>
+      <Services/>
       <div id="work" className="h-screen w-full">
         <h2 className="text-4xl p-6">Work</h2>
       </div>
