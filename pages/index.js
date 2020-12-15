@@ -38,7 +38,7 @@ export default function Home() {
   return (
     <div>
       <Head>
-        <title>Create Next App</title>
+        <title>Paul Walker -- Professional Web Development</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <FontAwesomeIcon
@@ -55,7 +55,7 @@ export default function Home() {
           hamburgerIsHidden()
             ? "hidden"
             : "display-block" +
-              ` flex text-white text-2xl w-full md:w-auto bg-gray-600 bg-opacity-40 md:bg-transparent fixed top-1 right-0 md:mr-12`
+              ` flex text-gray-300 text-2xl w-full md:w-auto bg-gray-600 bg-opacity-40 md:bg-transparent fixed top-1 right-0 md:mr-12 z-50`
         }
       >
         <li>
@@ -103,7 +103,7 @@ export default function Home() {
             </h3>
           </div>
         </div>
-          <div className="w-full mx-auto sm:w-4/12 h-80 sm:h-64 bg-gray-600 bg-opacity-60 absolute bottom-24 sm:left-1/3">
+        <div className="w-full mx-auto sm:w-4/12 h-80 sm:h-64 bg-gray-400 bg-opacity-60 absolute bottom-24 sm:left-1/3">
           <h4 className="text-2xl w-9/12 mx-auto my-6 text-center">
             Web Development & Design Services for the Modern Web.
           </h4>
@@ -123,8 +123,39 @@ export default function Home() {
       <div id="work" className="h-screen w-full">
         <h2 className="text-4xl p-6">Work</h2>
       </div>
-      <div id="about" className="h-screen w-full">
-        <h2 className="text-4xl p-6">About</h2>
+      <div
+        id="about"
+        className="relative min-h-screen w-full bg-skyline bg-opacity-60"
+      >
+        <h2 className="text-4xl p-6 z-20">About</h2>
+        <div className="w-10/12 bg-gray-300 bg-opacity-90 m-8 py-4 md:absolute md:left-36 md:top-16 z-30">
+          <h3 className="text-3xl m-6">Greetings!</h3>
+          <p className="m-6 text-2xl">
+            I am a full stack web developer living in Philadelphia. I am
+            polyglot and a technologist with 10 years of experience working
+            across a variety of platforms, and with a variety of individuals and
+            organizations.
+          </p>
+          <p className="m-6 text-2xl">
+            I believe that technology has the ability to transform our society
+            for the better and I believe that my work has the ability to change
+            peoples' lives for the better, as well. I am excited to be working
+            in an ever-changing field, and am always looking forward to new
+            relationships and to the next challend. I hope that we have the
+            opporitunity to work together and lookg forward to meeting you, or
+            to working together again!
+          </p>
+          <p className="m-6 text-2xl">Want to get in touch?</p>
+          <p></p>
+          <a
+            href="#contact"
+            className="block w-full text-left m-6"
+          >
+            <button className="bg-blue-900 text-white rounded hover:bg-blue-500 px-4 py-2 focus:outline-none">
+              Contact Me
+            </button>
+          </a>
+        </div>
       </div>
       <Skills />
       <div id="contact" className="h-screen w-full">
