@@ -4,7 +4,7 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: (theme) => ({
-        "skyline": "url('/philly_skyline_bg.jpg')",
+        "rapeseed": "url('/rape-field-in-spring-time-1633494.jpg')",
         "boathouse-row": "url('/boathouse_row_bg.jpg')",
       }),
     },
