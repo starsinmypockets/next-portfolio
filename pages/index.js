@@ -5,9 +5,9 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import Menu from "../components/menu"
 import Home from "../components/home"
 import Services from "../components/services"
+import About from "../components/about"
 import Work from "../components/work"
 import Skills from "../components/skills"
-import About from "../components/about"
 import Contact from "../components/contact"
 
 export default function App() {
@@ -40,9 +40,9 @@ export default function App() {
       <Menu dimensions={dimensions} />
       <Home />
       <Services />
+      <About />
       <Work />
       <Skills />
-      <About />
       <Contact />
     </div>
   )

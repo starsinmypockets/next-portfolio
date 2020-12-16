@@ -40,6 +40,11 @@ export default function Menu(props) {
           </a>
         </li>
         <li>
+          <a href="#about" className="flex-1 mr-6">
+            About
+          </a>
+        </li>
+        <li>
           <a href="#work" className="flex-1 mr-6">
             Work
           </a>
@@ -47,11 +52,6 @@ export default function Menu(props) {
         <li>
           <a href="#skills" className="flex-1 mr-6">
             Skills
-          </a>
-        </li>
-        <li>
-          <a href="#about" className="flex-1 mr-6">
-            About
           </a>
         </li>
         <li>
