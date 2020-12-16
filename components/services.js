@@ -62,9 +62,9 @@ export default function Services() {
       className="w-full bg-blue-900 min-h-screen p-6 text-white"
     >
       <h2 className="text-4xl">Services</h2>
-      <div className="grid grid-cols-1 md:grid-cols-4 md:h-screen text-center pb-12 md:px-24">
+      <div className="grid grid-cols-1 md:grid-cols-4 md:h-screen text-center pb-12 md:px-2">
         {items.map((item, i) => (
-          <div className="relative mt-20 md:mt-24">
+          <div className="relative mt-20 md:mt-24 lg:mt-48">
             <div className="h-36">
               <FontAwesomeIcon className="h-32 m-auto" icon={item.icon} />
               {i + 1 < items.length && (
