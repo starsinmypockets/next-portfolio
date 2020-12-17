@@ -41,7 +41,7 @@ export default function App() {
       <Home />
       <Services />
       <About />
-      <Work />
+      <Work dimensions={dimensions} />
       <Skills />
       <Contact />
     </div>

@@ -1,6 +1,9 @@
 import axios from "axios"
+import { useState } from "react"
 
 export default function Contact() {
+  const [resMsg, setResMsg] = useState()
+
   return (
     <div
       id="contact"
@@ -8,6 +11,7 @@ export default function Contact() {
     >
       <h2 className="text-4xl mb-4">Contact</h2>
       <form
+        id="contact-form"
         onSubmit={async (e) => {
           e.preventDefault()
           const body = {}
@@ -23,8 +27,15 @@ export default function Contact() {
                 },
               }
             )
+            document.getElementById("contact-form").reset()
+            setResMsg(
+              "Your message was sent. I will be in touch with you soon!"
+            )
           } catch (err) {
             console.log("Error submitting contact form", err)
+            setResMsg(
+              "Sorry! There was an error submitting your message. Try contacting me via email at pjwalker76@gmail.com"
+            )
           }
         }}
       >
@@ -77,6 +88,11 @@ export default function Contact() {
           Submit
         </button>
       </form>
+      {resMsg && (
+        <p className="mt-6">
+          <span className="text-2xl p-2 bg-gray-300">{resMsg}</span>
+        </p>
+      )}
     </div>
   )
 }
