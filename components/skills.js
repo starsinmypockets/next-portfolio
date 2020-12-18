@@ -55,7 +55,7 @@ export default function Skills() {
         lacus ante convallis tellus, vitae ia.
       </p>
 
-      <div className="grid grid-cols-1 md:grid-cols-3 md:h-screen text-center pb-12">
+      <div className="grid grid-cols-1 md:grid-cols-3 text-center pb-12">
         {items.map((item) => (
           <div className="mt-12">
             <div className="h-28">

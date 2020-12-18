@@ -2,7 +2,7 @@ export default function About() {
   return (
     <div
       id="about"
-      className="relative min-h-screen bg-skyline bg-opacity-60"
+      className="min-h-screen bg-skyline bg-opacity-60"
     >
       <h2 className="text-4xl p-6 z-20">About</h2>
         <div className="w-9/12 mx-auto bg-gray-300 bg-opacity-90 m-8 md:top-36 pb-30 z-30">
