@@ -59,13 +59,13 @@ export default function Services() {
   return (
     <div
       id="services"
-      className="w-full bg-blue-900 min-h-screen p-6 text-white"
+      className="w-full bg-blue-900 p-6 text-white"
     >
       <h2 className="text-4xl">Services</h2>
         <p className="text-xl py-6">
           Pellentesque egestas, neque sit amet convallis pulvinar, justo nulla eleifend augue, ac auctor orci leo non est. Nam at tortor in tellus interdum sagittis. Suspendisse faucibus, nunc et pellentesque egestas, lacus ante convallis tellus, vitae ia.
       </p>
-      <div className="grid grid-cols-1 md:grid-cols-4 md:h-screen text-center pb-12 md:px-2">
+      <div className="grid grid-cols-1 md:grid-cols-4 text-center pb-12 md:px-2">
         {items.map((item, i) => (
           <div className="relative mt-20 md:mt-12 lg:mt-24">
             <div className="h-36">

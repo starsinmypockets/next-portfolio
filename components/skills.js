@@ -46,7 +46,7 @@ const items = [
 
 export default function Skills() {
   return (
-    <div id="skills" className="w-full bg-blue-900 min-h-screen text-white">
+    <div id="skills" className="w-full bg-blue-900 text-white">
       <h2 className="text-4xl p-6">Skills</h2>
       <p className="text-xl p-6">
         Pellentesque egestas, neque sit amet convallis pulvinar, justo nulla

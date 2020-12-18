@@ -1,6 +1,6 @@
 export default function Home() {
   return (
-    <div id="home" className="h-screen w-full bg-rapeseed bg-top md:bg-cover">
+    <div id="home" className="w-full bg-rapeseed bg-top md:bg-cover">
       <div className="bg-blue-900 w-full h-60 md:h-40">
         <div className="text-center mt-6 md:mt-2 md:text-left absolute top-6">
           <h2 className="text-white text-4xl pl-6 pt-6 w-full">Paul Walker</h2>
