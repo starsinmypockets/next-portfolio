@@ -1,8 +1,11 @@
 import axios from "axios"
-import { useState } from "react"
+import { useState, createRef } from "react"
+import ReCAPTCHA from "react-google-recaptcha"
+const recaptchaRef = createRef()
 
 export default function Contact() {
   const [resMsg, setResMsg] = useState()
+  const [capcha, setCapcha] = useState()
 
   return (
     <div
@@ -18,6 +21,7 @@ export default function Contact() {
         id="contact-form"
         onSubmit={async (e) => {
           e.preventDefault()
+          console.log("CAPCHA", capcha)
           const body = {}
           const formData = new FormData(e.target)
           formData.forEach((value, key) => (body[key] = value))
@@ -85,6 +89,10 @@ export default function Contact() {
             placeholder="Type your message"
           />
         </div>
+        <ReCAPTCHA
+          sitekey="6LdQ3wsaAAAAADscmTMlCcTVo_4MgJBZcTpKQcxM"
+          onChange={setCapcha}
+        />
         <button
           className="bg-blue-600 hover:bg-blue-700 duration-300 text-white shadow p-2 rounded-r"
           type="submit"
