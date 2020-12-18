@@ -4,46 +4,46 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 
 const items = [
   {
-    title: "Image 1",
+    title: "Brightpoint Health",
     description:
       "Fusce convallis metus id felis luctus adipiscing. Vestibulum volutpat pretium libero. Curabitur blandit mollis lacus. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.",
-    imageUrl: "/tree.jpeg",
+    imageUrl: "/brightpoint_bupe.jpg",
+    href: "#",
   },
   {
-    title: "Image 2",
+    title: "Montreal Open Data",
     description:
       "Fusce convallis metus id felis luctus adipiscing. Vestibulum volutpat pretium libero. Curabitur blandit mollis lacus. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.",
-    imageUrl: "/tree.jpeg",
+    imageUrl: "/montreal_website.png",
+    href: "#",
   },
   {
-    title: "Image 3",
+    title: "Georgia Board of Physicians",
     description:
       "Fusce convallis metus id felis luctus adipiscing. Vestibulum volutpat pretium libero. Curabitur blandit mollis lacus. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.",
-    imageUrl: "/tree.jpeg",
+    imageUrl: "/ga_board_of_phys.png",
+    href: "#",
   },
   {
-    title: "Image 4",
+    title: "DKAN",
     description:
       "Fusce convallis metus id felis luctus adipiscing. Vestibulum volutpat pretium libero. Curabitur blandit mollis lacus. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.",
-    imageUrl: "/tree.jpeg",
+    imageUrl: "/dkan.png",
+    href: "#",
   },
   {
-    title: "Image 5",
+    title: "DKAN",
     description:
       "Fusce convallis metus id felis luctus adipiscing. Vestibulum volutpat pretium libero. Curabitur blandit mollis lacus. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.",
-    imageUrl: "/tree.jpeg",
+    imageUrl: "/dkan.png",
+    href: "#",
   },
   {
-    title: "Image 6",
+    title: "DKAN",
     description:
       "Fusce convallis metus id felis luctus adipiscing. Vestibulum volutpat pretium libero. Curabitur blandit mollis lacus. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.",
-    imageUrl: "/tree.jpeg",
-  },
-  {
-    title: "Image 7",
-    description:
-      "Fusce convallis metus id felis luctus adipiscing. Vestibulum volutpat pretium libero. Curabitur blandit mollis lacus. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.",
-    imageUrl: "/tree.jpeg",
+    imageUrl: "/dkan.png",
+    href: "#",
   },
 ]
 
@@ -56,7 +56,8 @@ export default function Work(props) {
   return (
     <div id="work" className="h-screen w-full">
       <h2 className="text-4xl p-6">Work</h2>
-      <div className="flex w-full mt-0 md:pt-12">
+      <p className="text-xl pl-6 pb-6">Quisque id mi. Pellentesque auctor neque nec urna.</p>
+      <div className="flex w-full h-96 md:h-5/6 mt-0 md:pt-12">
         <div className="flex-auto w-8">
           {i > 0 && (
             <FontAwesomeIcon
@@ -70,13 +71,21 @@ export default function Work(props) {
             />
           )}
         </div>
-        <div className="w-full flex-auto grid grid-cols-1 md:grid-cols-3 mx-auto">
+        <div className="w-full flex-auto grid grid-cols-1 md:grid-cols-3 mx-auto text-center md:text-left">
           {items.slice(i, i + itemsToShow).map((item) => {
             return (
-              <div className="m-2 h-full">
-                <img src={item.imageUrl} className="w-full mh-90" />
-                <h3 className="text-2xl">{item.title}</h3>
-                <p>{item.description}</p>
+              <div className="relative m-2">
+                <div className="absolute top-0">
+                  <a href={item.href}>
+                    <img src={item.imageUrl} className="w-full" />
+                  </a>
+                </div>
+                <div className="absolute bottom-10">
+                  <a href={item.href}>
+                    <h3 className="text-2xl">{item.title}</h3>
+                  </a>
+                  <p>{item.description}</p>
+                </div>
               </div>
             )
           })}
