@@ -6,44 +6,44 @@ const items = [
   {
     title: "Brightpoint Health",
     description:
-      "Fusce convallis metus id felis luctus adipiscing. Vestibulum volutpat pretium libero. Curabitur blandit mollis lacus. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.",
+      "Updated Brightpoint Health clinic's site with new programming data and SEO optimization.",
     imageUrl: "/brightpoint_bupe.jpg",
-    href: "#",
+    href: "https://brightpointhealth.org/",
   },
   {
     title: "Montreal Open Data",
     description:
-      "Fusce convallis metus id felis luctus adipiscing. Vestibulum volutpat pretium libero. Curabitur blandit mollis lacus. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.",
+      "Led a team of developers working on the city of Montreal's open data portal.",
     imageUrl: "/montreal_website.png",
-    href: "#",
+    href: "https://donnees.montreal.ca/",
   },
   {
     title: "Georgia Board of Physicians",
     description:
-      "Fusce convallis metus id felis luctus adipiscing. Vestibulum volutpat pretium libero. Curabitur blandit mollis lacus. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.",
+      "Led development on the State of Georgia's 'Physician's Workforce Data' interactive site featuring data visualizations using React, and DKAN open data platform.",
     imageUrl: "/ga_board_of_phys.png",
-    href: "#",
+    href: "https://gbpw.georgia.gov/physician-workforce-data",
+  },
+  {
+    title: "Mt. Airy Baseball",
+    description:
+      "Developed online registration system featuring league statistics, game schedules, and payment system.",
+    imageUrl: "/mab.jpg",
+    href: "https://web.archive.org/web/*/mtairybaseball.org",
   },
   {
     title: "DKAN",
     description:
-      "Fusce convallis metus id felis luctus adipiscing. Vestibulum volutpat pretium libero. Curabitur blandit mollis lacus. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.",
+      "Worked as maintainer of the DKAN open data portal.",
     imageUrl: "/dkan.png",
-    href: "#",
+    href: "http://demo.getdkan.com/",
   },
   {
-    title: "DKAN",
+    title: "React Dash",
     description:
-      "Fusce convallis metus id felis luctus adipiscing. Vestibulum volutpat pretium libero. Curabitur blandit mollis lacus. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.",
-    imageUrl: "/dkan.png",
-    href: "#",
-  },
-  {
-    title: "DKAN",
-    description:
-      "Fusce convallis metus id felis luctus adipiscing. Vestibulum volutpat pretium libero. Curabitur blandit mollis lacus. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.",
-    imageUrl: "/dkan.png",
-    href: "#",
+      "Collaborated on development of in-house data visualization dashboard tool using React and D3.",
+    imageUrl: "/react_dash.png",
+    href: "https://github.com/NuCivic/react-dash",
   },
 ]
 
@@ -75,7 +75,7 @@ export default function Work(props) {
             return (
               <div className="m-2">
                 <div className="h-96">
-                  <a href={item.href}>
+                  <a href={item.href} target="_blank">
                     <img src={item.imageUrl} className="w-full" />
                   </a>
                 </div>
