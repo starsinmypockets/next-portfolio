@@ -7,7 +7,7 @@ const items = [
     title: "Brightpoint Health",
     description:
       "Updated Brightpoint Health clinic's site with new programming data and SEO optimization.",
-    imageUrl: "/brightpoint_bupe.jpg",
+    imageUrl: "/brightpoint_bupe.webp",
     alt: "Brightpoint Health Suboxone treatment web page",
     href: "https://brightpointhealth.org/",
   },
@@ -15,7 +15,7 @@ const items = [
     title: "Montreal Open Data",
     description:
       "Led a team of developers working on the city of Montreal's open data portal.",
-    imageUrl: "/montreal_website.png",
+    imageUrl: "/montreal_website.webp",
     alt: "Montreal open data web page",
     href: "https://donnees.montreal.ca/",
   },
@@ -23,7 +23,7 @@ const items = [
     title: "Georgia Board of Physicians",
     description:
       "Led development on the State of Georgia's 'Physician's Workforce Data' interactive site featuring data visualizations using React, and DKAN open data platform.",
-    imageUrl: "/ga_board_of_phys.png",
+    imageUrl: "/ga_board_of_phys.webp",
     alt: "Georgia Board of Physicians web page",
     href: "https://gbpw.georgia.gov/physician-workforce-data",
   },
@@ -31,7 +31,7 @@ const items = [
     title: "Mt. Airy Baseball",
     description:
       "Developed online registration system featuring league statistics, game schedules, and payment system.",
-    imageUrl: "/mab.jpg",
+    imageUrl: "/mab.webp",
     alt: "Mt Airy Baseball home page",
     href: "https://web.archive.org/web/*/mtairybaseball.org",
   },
@@ -39,7 +39,7 @@ const items = [
     title: "DKAN",
     description:
       "Worked as maintainer of the DKAN open data portal.",
-    imageUrl: "/dkan.png",
+    imageUrl: "/dkan.webp",
     alt: "DKAN home page",
     href: "http://demo.getdkan.com/",
   },
@@ -47,7 +47,7 @@ const items = [
     title: "React Dash",
     description:
       "Collaborated on development of in-house data visualization dashboard tool using React and D3.",
-    imageUrl: "/react_dash.png",
+    imageUrl: "/react_dash.webp",
     alt: "React Dash example dashboard",
     href: "https://github.com/NuCivic/react-dash",
   },

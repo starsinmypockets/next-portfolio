@@ -4,9 +4,9 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: (theme) => ({
-        "rapeseed": "url('/rape-field-in-spring-time-1633494.jpg')",
-        "skyline": "url('/philly_skyline_bg.jpg')",
-        "boathouse-row": "url('/boathouse_row_bg.jpg')",
+        "rapeseed": "url('/rape-field-in-spring-time-1633494.webp')",
+        "skyline": "url('/philly_skyline_bg.webp')",
+        "boathouse-row": "url('/boathouse_row_bg.webp')",
       }),
     },
   },
