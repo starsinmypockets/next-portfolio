@@ -56,7 +56,7 @@ export default function Work(props) {
   return (
     <div id="work" className="w-full">
       <h2 className="text-4xl p-6">Work</h2>
-      <p className="text-xl pl-6 pb-6">Quisque id mi. Pellentesque auctor neque nec urna.</p>
+      <p className="text-xl pl-6 pb-6">From home-grown business to state governments, I have worked with a wide variety of clients to help build and maintain their online presence.</p>
       <div className="flex w-full mt-0 md:pt-12">
         <div className="flex-auto w-8">
           {i > 0 && (

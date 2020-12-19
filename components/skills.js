@@ -48,12 +48,7 @@ export default function Skills() {
   return (
     <div id="skills" className="w-full bg-blue-900 text-white">
       <h2 className="text-4xl p-6">Skills</h2>
-      <p className="text-xl p-6">
-        Pellentesque egestas, neque sit amet convallis pulvinar, justo nulla
-        eleifend augue, ac auctor orci leo non est. Nam at tortor in tellus
-        interdum sagittis. Suspendisse faucibus, nunc et pellentesque egestas,
-        lacus ante convallis tellus, vitae ia.
-      </p>
+      <p className="text-xl p-6">With ten years of experience in the trade, I have worked with a variety of technologies and kept up with the ever-changing landscape of the internet. Here are just a few of my key proficiencies.</p>
 
       <div className="grid grid-cols-1 md:grid-cols-3 text-center pb-12">
         {items.map((item) => (

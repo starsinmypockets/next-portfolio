@@ -14,7 +14,7 @@ export default function Contact() {
     >
       <h2 className="text-4xl md:text-white p-6">Contact</h2>
       <p className="text-xl md:text-white pl-6">
-        Please reach out and I will reply as soon as possible.
+        Please reach out via the contact form below and I will reply as soon as possible.
       </p>
 
       <form
