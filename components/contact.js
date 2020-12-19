@@ -9,10 +9,10 @@ export default function Contact() {
   return (
     <div
       id="contact"
-      className="p-8 justify-center items-center min-h-screen bg-skyline bg-bottom bg-cover bg-opacity-20"
+      className="p-10 justify-center items-center min-h-screen bg-skyline bg-bottom bg-cover bg-opacity-20"
     >
-      <h2 className="text-4xl md:text-white p-6">Contact</h2>
-      <p className="text-xl md:text-white pl-6">
+      <h2 className="text-4xl md:text-white">Contact</h2>
+      <p className="text-xl md:text-white py-6">
         Please reach out via the contact form below and I will reply as soon as possible.
       </p>
 

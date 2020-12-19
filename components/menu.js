@@ -8,7 +8,7 @@ export default function Menu(props) {
     props.dimensions.width <= 744 && showHamburger == false
 
   return (
-    <div id="menu">
+    <div id="menu" className="w-full bg-gray-300 bg-opacity-90 fixed right-0 z-50">
       <FontAwesomeIcon
         className={
           !hamburgerIsHidden()
@@ -23,39 +23,39 @@ export default function Menu(props) {
           hamburgerIsHidden()
             ? "hidden"
             : "display-block" +
-              ` flex text-gray-300 text-2xl w-full md:w-auto bg-gray-600 bg-opacity-40 md:bg-transparent fixed top-1 right-0 md:mr-12 z-50`
+              ` float-right flex md:text-2xl w-full md:w-auto md:mr-12`
         }
       >
         <li>
           <span
-            className="mr-6 ml-2 md:hidden text-gray-200"
+            className="mr-3 md:mr-6 ml-2 md:hidden text-gray-200"
             onClick={() => setShowHamburger(false)}
           >
             X
           </span>
         </li>
         <li>
-          <a href="#services" className="flex-1 mr-6">
+          <a href="#services" className="flex-1 mr-3 md:mr-6">
             Services
           </a>
         </li>
         <li>
-          <a href="#about" className="flex-1 mr-6">
+          <a href="#about" className="flex-1 mr-3 md:mr-6">
             About
           </a>
         </li>
         <li>
-          <a href="#work" className="flex-1 mr-6">
+          <a href="#work" className="flex-1 mr-3 md:mr-6">
             Work
           </a>
         </li>
         <li>
-          <a href="#skills" className="flex-1 mr-6">
+          <a href="#skills" className="flex-1 mr-3 md:mr-6">
             Skills
           </a>
         </li>
         <li>
-          <a href="#contact" className="flex-1 mr-6">
+          <a href="#contact" className="flex-1 mr-3 md:mr-6">
             Contact
           </a>
         </li>

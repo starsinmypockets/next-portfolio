@@ -59,7 +59,7 @@ export default function Services() {
   return (
     <div
       id="services"
-      className="w-full bg-blue-900 p-6 text-white"
+      className="p-10 w-full bg-blue-900 text-white"
     >
       <h2 className="text-4xl">Services</h2>
         <p className="text-xl py-6">Planning, design, and development go hand in hand. Let's work together to find an solution that meets your needs.</p>
