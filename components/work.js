@@ -79,7 +79,7 @@ export default function Work(props) {
                     <img src={item.imageUrl} className="w-full" />
                   </a>
                 </div>
-                <div className="">
+                <div className="p2 bg-white opacity-95">
                   <a href={item.href}>
                     <h3 className="text-2xl">{item.title}</h3>
                   </a>
