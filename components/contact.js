@@ -1,7 +1,6 @@
 import axios from "axios"
 import { useState, createRef } from "react"
 import ReCAPTCHA from "react-google-recaptcha"
-const recaptchaRef = createRef()
 
 export default function Contact() {
   const [resMsg, setResMsg] = useState()
@@ -22,7 +21,9 @@ export default function Contact() {
         onSubmit={async (e) => {
           e.preventDefault()
           console.log("CAPCHA", capcha)
-          const body = {}
+          const body = {
+            capcha: capcha
+          }
           const formData = new FormData(e.target)
           formData.forEach((value, key) => (body[key] = value))
           try {
@@ -35,10 +36,25 @@ export default function Contact() {
                 },
               }
             )
+            console.log(res)
+
             document.getElementById("contact-form").reset()
-            setResMsg(
-              "Your message was sent. I will be in touch with you soon!"
-            )
+            
+            if (res.data && res.data.msg == "spam") {
+              setResMsg("Sorry -- this message fails our spam filter -- please try again later.")
+            }
+
+            if (res.data && res.data.msg == "fail") { 
+              setResMsg(
+                "Sorry! There was an error submitting your message. Try contacting me via email at pjwalker76@gmail.com"
+              )
+            }
+
+            if (res.data && res.data.msg == "success") {
+              setResMsg(
+                "Your message was sent. I will be in touch with you soon!"
+              )
+            }
           } catch (err) {
             console.log("Error submitting contact form", err)
             setResMsg(
@@ -90,7 +106,7 @@ export default function Contact() {
           />
         </div>
         <ReCAPTCHA
-          sitekey="6LdQ3wsaAAAAADscmTMlCcTVo_4MgJBZcTpKQcxM"
+          sitekey="6LeS5wsaAAAAAD8QKYKrt2QELVNLbDJxnG1SarCh"
           onChange={setCapcha}
         />
         <button

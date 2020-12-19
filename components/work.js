@@ -64,7 +64,6 @@ export default function Work(props) {
               onClick={(e) => {
                 e.preventDefault
                 ii(i - 1)
-                console.log(i)
               }}
               icon={faArrowLeft}
               className="mt-36 cursor-pointer"
@@ -106,7 +105,6 @@ export default function Work(props) {
       <div className="mx-auto text-center">
         {items.map((item, n) => {
           const isBlue = i + itemsToShow >= n + 1 && n + 1 > i
-          console.log(i + itemsToShow, n + 1, i, isBlue)
           return (
             <span
               onClick={(_) => {
