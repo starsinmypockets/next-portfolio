@@ -56,7 +56,7 @@ export default function Work(props) {
   return (
     <div id="work" className="w-full">
       <h2 className="text-4xl p-6">Work</h2>
-      <p className="text-xl pl-6 pb-6">From home-grown business to state governments, I have worked with a wide variety of clients to help build and maintain their online presence.</p>
+      <p className="text-xl md:pl-6 md:pb-6 hidden md:block">From home-grown business to state governments, I have worked with a wide variety of clients to help build and maintain their online presence.</p>
       <div className="flex w-full mt-0 md:pt-12">
         <div className="flex-auto w-8">
           {i > 0 && (
@@ -73,8 +73,8 @@ export default function Work(props) {
         <div className="w-full flex-auto grid grid-cols-1 md:grid-cols-3 mx-auto text-center md:text-left">
           {items.slice(i, i + itemsToShow).map((item) => {
             return (
-              <div className="m-2">
-                <div className="h-96">
+              <div className="m-2 md:m-8">
+                <div className="h-48 md:h-96 overflow-hidden">
                   <a href={item.href} target="_blank">
                     <img src={item.imageUrl} className="w-full" />
                   </a>
