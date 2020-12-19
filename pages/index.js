@@ -32,7 +32,7 @@ export default function App() {
   console.log(dimensions.width, dimensions.height)
 
   return (
-    <div>
+    <div className="font-sans">
       <Head>
         <title>Paul Walker -- Professional Web Development</title>
         <link rel="icon" href="/favicon.ico" />
