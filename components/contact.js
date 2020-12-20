@@ -28,7 +28,7 @@ export default function Contact() {
           formData.forEach((value, key) => (body[key] = value))
           try {
             const res = await axios.post(
-              "http://dev.pjwalker.net:3002/send",
+              "https://contact.pjwalker.net/send",
               body,
               {
                 headers: {
@@ -40,17 +40,17 @@ export default function Contact() {
 
             document.getElementById("contact-form").reset()
             
-            if (res.data && res.data.msg == "spam") {
+            if (res.data && res.data.status == "spam") {
               setResMsg("Sorry -- this message fails our spam filter -- please try again later.")
             }
 
-            if (res.data && res.data.msg == "fail") { 
+            if (res.data && res.data.status == "fail") { 
               setResMsg(
                 "Sorry! There was an error submitting your message. Try contacting me via email at pjwalker76@gmail.com"
               )
             }
 
-            if (res.data && res.data.msg == "success") {
+            if (res.data && res.data.status == "success") {
               setResMsg(
                 "Your message was sent. I will be in touch with you soon!"
               )

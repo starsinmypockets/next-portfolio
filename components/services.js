@@ -67,7 +67,7 @@ export default function Services() {
         {items.map((item, i) => (
           <div className="relative mt-20 md:mt-12 lg:mt-24">
             <div className="h-36">
-              <FontAwesomeIcon className="h-32 m-auto" icon={item.icon} />
+              <FontAwesomeIcon className="h-36 m-auto" icon={item.icon} />
               {i + 1 < items.length && (
                 <FontAwesomeIcon
                   className="hidden md:block h-12 absolute -right-2 top-16"

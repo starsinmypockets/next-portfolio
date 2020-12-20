@@ -50,12 +50,12 @@ export default function Menu(props) {
             <FontAwesomeIcon icon={faStackOverflow} />
           </a>
         </li>
-        <li className="ml-4 mt-3 w-4">
+        <li className="ml-4 mt-2 w-4">
           <a href="https://twitter.com/pwalk99">
             <FontAwesomeIcon icon={faTwitter} />
           </a>
         </li>
-        <li className="ml-4 mt-3 w-4">
+        <li className="ml-4 mt-2 w-4">
           <a href="mailto:pjwalker76@gmail.com">
             <FontAwesomeIcon icon={faEnvelope} />
           </a>
