@@ -13,7 +13,7 @@ export default function Home() {
         <h4 className="text-2xl w-9/12 mx-auto pt-6 mb-6 text-center">
           Web Development & Design Services for the Modern Web.
         </h4>
-        <i className="block text-2xl w-6/12 mx-auto text-center">
+        <i className="block text-2xl w-6/12 h-48 mx-auto text-center">
           Want to talk about a project?
         </i>
         <a href="#contact" className="w-full text-center absolute bottom-4">

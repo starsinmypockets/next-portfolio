@@ -75,7 +75,7 @@ export default function Services() {
                 />
               )}
             </div>
-            <h2 className="text-3xl mb-0 md:mb-8">{item.title}</h2>
+            <h2 className="text-4xl m-8">{item.title}</h2>
             <div className="md:w-10/12 mx-auto my-4 text-left md:text-center text-2xl">
               {item.desc}
             </div>

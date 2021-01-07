@@ -87,9 +87,9 @@ export default function Work(props) {
                 </div>
                 <div className="p2 bg-white opacity-95">
                   <a href={item.href}>
-                    <h3 className="text-2xl">{item.title}</h3>
+                    <h3 className="text-3xl">{item.title}</h3>
                   </a>
-                  <p>{item.description}</p>
+                  <p className="text-2xl">{item.description}</p>
                 </div>
               </div>
             )

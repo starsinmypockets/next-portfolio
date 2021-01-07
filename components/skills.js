@@ -56,7 +56,7 @@ export default function Skills() {
             <div className="h-28">
               <FontAwesomeIcon className="w-24 m-auto" icon={item.icon} />
             </div>
-            <h2 className="text-4xl mb-4">{item.title}</h2>
+            <h2 className="text-4xl m-8">{item.title}</h2>
             <lead className="text-2xl">{item.desc}</lead>
           </div>
         ))}
