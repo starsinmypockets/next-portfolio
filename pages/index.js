@@ -6,7 +6,7 @@ import Menu from "../components/menu"
 import Home from "../components/home"
 import Services from "../components/services"
 import About from "../components/about"
-import Work from "../components/work"
+import Work from "../components/work_slider"
 import Skills from "../components/skills"
 import Contact from "../components/contact"
 

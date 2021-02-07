@@ -1,12 +1,12 @@
 export default function Home() {
   return (
-    <div id="home" className="min-h-screen w-full bg-rapeseed bg-top md:bg-cover">
-      <div className="bg-blue-900 w-full h-60 md:h-40">
+    <div id="home" className="min-h-screen w-full bg-skyline bg-top md:bg-cover">
+      <div className="w-full h-60 md:h-40">
         <div className="text-center mt-6 md:mt-2 md:text-left absolute top-6">
-          <h2 className="text-white text-4xl pl-6 pt-6 w-full">Paul Walker</h2>
-          <h3 className="text-white text-3xl mt-2 pl-6 w-full">
+          <h1 className="text-4xl font-black pl-6 pt-6 w-full">Paul Walker</h1>
+          <h2 className="text-3xl font-black mt-2 pl-6 w-full">
             Professional Web Development
-          </h3>
+          </h2>
         </div>
       </div>
         <div className="relative w-full md:w-4/12 mx-auto h-3/6 md:h-96 lg:h-72 bg-gray-400 bg-opacity-60 md:mt-32">
