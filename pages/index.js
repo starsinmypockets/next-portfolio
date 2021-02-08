@@ -29,8 +29,6 @@ export default function App() {
     }
   }, [])
 
-  console.log(dimensions.width, dimensions.height)
-
   return (
     <div className="font-sans">
       <Head>
@@ -38,7 +36,7 @@ export default function App() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Menu dimensions={dimensions} />
-      <Home />
+      <Home dimensions={dimensions} />
       <Services />
       <About />
       <Work dimensions={dimensions} />
