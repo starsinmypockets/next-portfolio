@@ -69,7 +69,7 @@ button:hover {
 		top: 50%;
 		transform: translateY(-50%);
 		z-index: 10;
-		background: url('http://svgshare.com/i/41_.svg') no-repeat center center / 16px;
+		/* background: url('http://svgshare.com/i/41_.svg') no-repeat center center / 16px; */
 		width: 32px;
 		height: 32px;
 		text-indent: -9999px;
@@ -77,13 +77,15 @@ button:hover {
 }
 
 .previousButton:hover, .nextButton:hover {
-  background: url('http://svgshare.com/i/41_.svg') no-repeat center center / 16px;
+  /* background: url('http://svgshare.com/i/41_.svg') no-repeat center center / 16px; */
 }
 
-.previousButton {
-  left: 0;
+.previousButton svg{
+  margin-left: 2em;
+  transform: rotate(0deg);
+  /*    
   -webkit-transform: rotate(180deg) translateY(calc(50% + 0px));
-          transform: rotate(180deg) translateY(calc(50% + 0px));
+          transform: rotate(180deg) translateY(calc(50% + 0px)); */
 }
 
 .previousButton:hover {
@@ -171,7 +173,7 @@ button:hover {
 
 @media (max-height: 500px) {
   .slider-wrapper, .slide {
-    height: calc(100vh - 75px);
+    height: calc(80vh - 75px);
   }    
 }
 
@@ -191,4 +193,9 @@ button:hover {
   .slider-content .inner h1 {
     font-size: 32px;
   }
+}
+
+@media (min-width: 720px) {
+  .slider-wrapper { min-height: 700px !important}
+  .slide { min-height: 700px }
 }

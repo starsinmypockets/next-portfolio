@@ -19,22 +19,22 @@ const items = [
     alt: "Montreal open data web page",
     href: "https://donnees.montreal.ca/",
   },
-  {
+  /*{
     title: "Georgia Board of Physicians",
     description:
       "Data visualizations using React.",
     imageUrl: "/ga_board_of_phys.webp",
     alt: "Georgia Board of Physicians web page",
     href: "https://gbpw.georgia.gov/physician-workforce-data",
-  },
+  }, // This image is tool tall for the slider
   {
     title: "Mt. Airy Baseball",
     description:
       "Registration and payment system.",
     imageUrl: "/mab.webp",
     alt: "Mt Airy Baseball home page",
-    href: "https://web.archive.org/web/*/mtairybaseball.org",
-  },
+    href: "https://web.archive.org/web/*/   // mtairybaseball.org",
+  // },                                ^ interpreted as comment close
   {
     title: "DKAN",
     description:
@@ -64,7 +64,7 @@ export default function Work(props) {
             return (
             <div>
               <section className="">
-                <img src={item.imageUrl} alt={item.alt} className="w-full" />
+                <img src={item.imageUrl} alt={item.alt} className="m-auto" />
               </section>
               <div className="inner bg-transparent text-center">
                 <h1 className="text-3xl">{item.title}</h1>
