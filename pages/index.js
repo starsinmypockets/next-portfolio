@@ -6,7 +6,8 @@ import Menu from "../components/menu"
 import Home from "../components/home"
 import Services from "../components/services"
 import About from "../components/about"
-import Work from "../components/work_slider"
+// import Work from "../components/work_slider"
+import Work from "../components/work"
 import Skills from "../components/skills"
 import Contact from "../components/contact"
 
@@ -37,10 +38,8 @@ export default function App() {
       </Head>
       <Menu dimensions={dimensions} />
       <Home dimensions={dimensions} />
-      <Services />
-      <About />
-      <Work dimensions={dimensions} />
-      <Skills />
+      <Work dimensions={dimensions} className="border-gray-200 border-b-2" />
+      <Skills dimensions={dimensions} />
       <Contact />
     </div>
   )

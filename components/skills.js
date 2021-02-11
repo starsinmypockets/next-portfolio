@@ -46,7 +46,7 @@ const items = [
 
 export default function Skills() {
   return (
-    <div id="skills" className="p-10 w-full bg-blue-900 text-white">
+    <div id="skills" className="p-10 w-full">
       <h2 className="text-4xl">Skills</h2>
       <p className="text-xl py-6">With ten years of experience in the trade, I have worked with a variety of technologies and kept up with the ever-changing landscape of the internet. Here are just a few of my key proficiencies.</p>
 
@@ -54,7 +54,7 @@ export default function Skills() {
         {items.map((item) => (
           <div className="mt-12">
             <div className="h-28">
-              <FontAwesomeIcon className="w-24 m-auto" icon={item.icon} />
+              <FontAwesomeIcon className="w-24 m-auto text-green-600" icon={item.icon} />
             </div>
             <h2 className="text-4xl m-8">{item.title}</h2>
             <lead className="text-2xl">{item.desc}</lead>

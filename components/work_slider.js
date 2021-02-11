@@ -56,8 +56,11 @@ const items = [
 export default function Work(props) {
   return (
     <div id="work" className="p-10">
-      <h2 className="text-4xl">Work</h2>
-      <p className="text-xl py-6">From home-grown business to state governments, I have worked with a wide variety of clients to help build and maintain their online presence.</p>
+      <div className="text-center">
+        <h2 className="text-4xl">Work</h2>
+        <p className="text-xl py-6">From home-grown business to state and local governments, I work with clients to ensure that their online presence reflects their organization's priorities. Interested in engagement? <a href="#contact">Contact me.</a>
+        </p>
+      </div>
       <div className="wrapper">
         <Slider className="slider-wrapper">
           {items.map(item => {

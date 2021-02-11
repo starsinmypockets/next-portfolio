@@ -60,7 +60,7 @@ export default function Work(props) {
   const [i, ii] = useState(0)
 
   return (
-    <div id="work" className="w-full p-10">
+    <div id="work" className="w-full px-10 py-24 border-b-2">
       <h2 className="text-4xl">Work</h2>
       <p className="text-xl py-6 hidden md:block">From home-grown business to state governments, I have worked with a wide variety of clients to help build and maintain their online presence.</p>
       <div className="flex w-full mt-0 md:pt-12">
