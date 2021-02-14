@@ -10,19 +10,19 @@ const items = [
   {
     icon: faDesktop,
     title: "Web Development",
-    desc: "Fusce fermentum. Curabitur nisi. Donec vitae sapien ut libero venenatis faucibus. Duis leo. Curabitur ligula sapien, tincidunt non.",
+    desc: "Web sites, applications, APIs, and hosting. Want to start a project?",
     contact: "Let's Talk!"
   },
   {
     icon: faHandsHelping,
     title: "Consulting",
-    desc: "Fusce fermentum. Curabitur nisi. Donec vitae sapien ut libero venenatis faucibus. Duis leo. Curabitur ligula sapien, tincidunt non.",
+    desc: "Digital and web strategy. Need help improving your online presence?",
     contact: "I can help!"
   },
   {
     icon: faTools,
     title: "Contracting",
-    desc: "Fusce fermentum. Curabitur nisi. Donec vitae sapien ut libero venenatis faucibus. Duis leo. Curabitur ligula sapien, tincidunt non.",
+    desc: "Looking to add capacity to an ongoing project? Trying to grow your team?",
     contact: "Contact me."
   },
 ]
