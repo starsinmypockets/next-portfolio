@@ -36,20 +36,20 @@ export default function Home(props) {
 
   return (
     <div id="home" className="border-b-2 pb-24">
-      <div className="w-full h-60 md:h-40 bg-saturn-top relative">
+      <div className="w-full h-52 md:h-60 md:h-40 bg-saturn-top relative">
         <img src="/me_round_glasses_square.jpg"
           alt="Paul Walker"
-          className="h-32 rounded-full absolute md:top-24 ml-4"
+          className="h-32 rounded-full absolute top-6 md:top-44 ml-4"
         />
-        <div className="text-center mt-6 md:mt-2 md:text-left absolute bottom-2">
-          <h1 className="text-5xl text-green-500 font-black ml-40">Paul Walker</h1>
+        <div className="ml-4 md:ml-0 text-center md:text-left absolute bottom-2">
+          <h1 className="text-5xl text-green-500 font-black md:ml-40">Paul Walker</h1>
         </div>
       </div>
-        <h2 className="text-3xl text-black font-black mt-2 ml-40 w-full">
-          Professional Web Development
-        </h2>
-      <div className="flex w-full p-24 mt-0 md:pt-12">
-        <div className="w-full flex-auto grid grid-cols-1 md:grid-cols-3 mx-24 text-center md:text-left">
+      <h2 className="hidden md:block text-3xl text-black font-black mt-2 ml-40 w-full">
+        Professional Web Development
+      </h2>
+      <div className="flex w-full md:p-24 mt-0 md:pt-12">
+        <div className="w-full flex-auto grid grid-cols-1 md:grid-cols-3 md:mx-24 text-center md:text-left">
           {items.slice(i, i + itemsToShow).map((item) => {
             return (
               <div className="mt-24 px-4 text-center">
