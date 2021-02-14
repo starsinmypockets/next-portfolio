@@ -65,7 +65,7 @@ export default function Contact() {
       >
         <div className="w-full">
           <input
-            className="bg-gray-200 shadow-inner rounded-l m-2 p-2 w-full md:w-4/12"
+            className="bg-gray-200 shadow-inner rounded-l my-2 p-2 w-full md:w-4/12"
             id="email"
             type="email"
             name="email"
@@ -75,7 +75,7 @@ export default function Contact() {
         </div>
         <div className="w-full">
           <input
-            className="bg-gray-200 shadow-inner rounded-l m-2 p-2 w-full md:w-4/12"
+            className="bg-gray-200 shadow-inner rounded-l my-2 p-2 w-full md:w-4/12"
             id="name"
             type="name"
             name="name"
@@ -85,7 +85,7 @@ export default function Contact() {
         </div>
         <div className="w-full">
           <input
-            className="bg-gray-200 shadow-inner rounded-l m-2 p-2 w-full md:w-4/12"
+            className="bg-gray-200 shadow-inner rounded-l my-2 p-2 w-full md:w-4/12"
             id="title"
             type="text"
             name="title"
@@ -95,7 +95,7 @@ export default function Contact() {
         </div>
         <div className="w-full">
           <textarea
-            className="bg-gray-200 shadow-inner rounded-l m-2 p-2 w-full mt-4 md:w-4/12"
+            className="bg-gray-200 shadow-inner rounded-l my-2 p-2 w-full mt-4 md:w-4/12"
             id="message"
             type="textarea"
             name="message"
@@ -110,7 +110,7 @@ export default function Contact() {
           onChange={setCapcha}
         />
         <button
-          className="bg-blue-600 hover:bg-blue-700 duration-300 text-white shadow p-2 rounded"
+          className="bg-blue-600 hover:bg-blue-700 duration-300 text-white shadow my-2 p-2 rounded"
           type="submit"
         >
           Submit
