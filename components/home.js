@@ -1,7 +1,9 @@
 import {
  faHandsHelping,
  faTools,
- faDesktop
+ faDesktop,
+ faArrowRight,
+ faArrowLeft
 } from "@fortawesome/free-solid-svg-icons"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { useState } from 'react'
@@ -48,6 +50,19 @@ export default function Home(props) {
       <h2 className="hidden md:block text-3xl text-black font-black mt-2 ml-40 w-full">
         Professional Web Development
       </h2>
+      <div className="flex w-full mt-0 md:pt-12">
+        <div className="flex-auto w-8 px-2">
+          {i > 0 && (
+            <FontAwesomeIcon
+              onClick={(e) => {
+                e.preventDefault
+                ii(i - 1)
+              }}
+              icon={faArrowLeft}
+              className="mt-36 cursor-pointer"
+            />
+          )}
+        </div>
       <div className="flex w-full md:p-24 mt-0 md:pt-12">
         <div className="w-full flex-auto grid grid-cols-1 md:grid-cols-3 md:mx-24 text-center md:text-left">
           {items.slice(i, i + itemsToShow).map((item) => {
@@ -65,6 +80,19 @@ export default function Home(props) {
             )
           })}
         </div>
+        <div className="flex-auto w-8 px-2">
+          {i < items.length - itemsToShow && (
+            <FontAwesomeIcon
+              onClick={(e) => {
+                e.preventDefault
+                ii(i + 1)
+              }}
+              icon={faArrowRight}
+              className="mt-36 cursor-pointer"
+            />
+          )}
+        </div>
+      </div>
       </div>
     </div>
   )
