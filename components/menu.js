@@ -78,16 +78,6 @@ export default function Menu(props) {
           </span>
         </li>
         <li>
-          <a href="#services" className="flex-1 mr-3 md:mr-6">
-            Services
-          </a>
-        </li>
-        <li>
-          <a href="#about" className="flex-1 mr-3 md:mr-6">
-            About
-          </a>
-        </li>
-        <li>
           <a href="#work" className="flex-1 mr-3 md:mr-6">
             Work
           </a>
