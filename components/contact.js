@@ -110,7 +110,7 @@ export default function Contact() {
           onChange={setCapcha}
         />
         <button
-          className="bg-blue-600 hover:bg-blue-700 duration-300 text-white shadow p-2 rounded-r"
+          className="bg-blue-600 hover:bg-blue-700 duration-300 text-white shadow p-2 rounded"
           type="submit"
         >
           Submit

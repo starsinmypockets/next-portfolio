@@ -22,7 +22,13 @@ export default function App() {
         width: window.innerWidth,
       })
     }
-
+    
+    // handle initial load
+    setDimensions({
+      height: window.innerHeight,
+      width: window.innerWidth,
+    })
+    
     window.addEventListener("resize", handleResize)
 
     return (_) => {
