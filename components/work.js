@@ -79,15 +79,15 @@ export default function Work(props) {
         <div className="w-full flex-auto grid grid-cols-1 md:grid-cols-3 mx-auto text-center md:text-left">
           {items.slice(i, i + itemsToShow).map((item) => {
             return (
-              <div className="m-2 md:m-8">
-                <div className="h-48 md:h-96 overflow-hidden">
+              <div className="m-2 md:m-8 text-center">
+                <div className="h-48 2xl:h-96 overflow-hidden">
                   <a href={item.href} target="_blank">
                     <img src={item.imageUrl} alt={item.alt} className="w-full" />
                   </a>
                 </div>
                 <div className="p2 bg-white opacity-95">
                   <a href={item.href}>
-                    <h3 className="text-3xl">{item.title}</h3>
+                    <h3 className="text-3xl my-4">{item.title}</h3>
                   </a>
                   <p className="text-2xl">{item.description}</p>
                 </div>
